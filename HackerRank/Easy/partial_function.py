@@ -2,7 +2,7 @@
 
 #!/bin/python3
 
-def partial(func, *args, **kwargs):
+def partial(func: callable, *args, **kwargs) -> callable:
     def inner(*extra_args, **extra_kwargs):
         all_args = args + extra_args
         all_kwargs = kwargs.copy()
