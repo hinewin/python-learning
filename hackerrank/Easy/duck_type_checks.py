@@ -2,18 +2,6 @@
 
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-#
-# Complete the 'process_data' function below.
-#
-# The function is expected to return obj.process() or None.
-# The function accepts an class object obj as parameter.
-#
 
 def process_data(obj):
     if hasattr(obj,"process") and callable(getattr(obj,"process")):
